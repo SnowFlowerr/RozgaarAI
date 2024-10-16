@@ -1,0 +1,80 @@
+.card-horizontal {
+    display: flex;
+    background-color: #ffedea;
+    border-radius: 8px;
+    width: 700px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .card-image-horizontal {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .card-content {
+    padding: 20px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .card-content h2 {
+    font-size: 24px;
+    color: #fff;
+    background-color: #d32f2f;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .card-content h1 {
+    font-size: 28px;
+    color: #d32f2f;
+    margin: 10px 0;
+  }
+  
+  .pricing {
+    margin-top: 10px;
+  }
+  
+  .new-price {
+    font-size: 24px;
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #888;
+  }
+  
+  .offer {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .card-footer {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-footer img {
+    width: 150px;
+  }
+  .apply-btn {
+    font-size: 26px;
+    color: #fff;
+    background-color: #d32f2f;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 50px;
+  }

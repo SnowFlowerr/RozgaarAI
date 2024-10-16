@@ -1,0 +1,317 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 2rem; /* Space between cards */
+  padding: 2rem;
+  background-color: #111111; /* Dark theme background */
+}
+.container{
+  background-color: #111111;
+  margin-top: -25px;
+
+}
+.animatedHeading{
+  text-align: center;
+  color: white;
+  height: 60px;
+  /* margin-bottom: 50px; */
+  align-content: end;
+}
+.animatedHeading > span{
+  background-color: #00ffee;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.animatedHeading > span:hover{
+  /* padding: 50px; */
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.card {
+  background-color: #1a1a1a; /* Dark background for card */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px; /* Slightly larger height */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #222222; /* Slightly lighter background on hover */
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profileImage {
+  width: 110px; /* Larger profile image */
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00d4ff; /* Aqua border */
+}
+
+.profileDetails {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.designation {
+  font-size: 1rem;
+  color: #a9a9a9; /* Lighter text for designation */
+}
+
+.time {
+  font-size: 0.85rem;
+  color: #777; /* Grey text */
+}
+
+.description {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: #dddddd;
+  line-height: 1.5;
+}
+
+.tags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #333333; /* Darker tag background */
+  color: #00d4ff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.connectOptions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.iconButton {
+  color: #00d4ff; /* Aqua blue for icons */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.iconButton:hover {
+  color: #00ffee; /* Brighter aqua on hover */
+}
+
+/* New Styling for "Schedule Call" Button */
+.scheduleCallButton {
+  background-color: #00d4ff; /* Bright aqua background */
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.scheduleCallButton:hover {
+  background-color: #00ffee; /* Brighter on hover */
+  transform: scale(1.05); /* Subtle grow effect */
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+
+  .card {
+    height: auto;
+  }
+}
+
+/* Modal container styling */
+.modal {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px;
+  width: 550px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
+  position: relative;
+}
+
+/* Overlay for the modal */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading for the modal */
+.modalTitle {
+  color: #00ffff;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slide-in 0.5s ease-in-out;
+}
+
+/* Slot selection grid */
+.slotContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Individual slot card styling */
+.slotItem {
+  background-color: #2a2a2a;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s ease;
+  font-size: 16px;
+}
+.slotItem2 {
+  background-color: #00d0d0;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s ease;
+  font-size: 16px;
+}
+
+/* Slot item hover and selected states */
+.slotItem:hover {
+  background-color: #00d0d0;
+  transform: scale(1.05);
+}
+
+.slotItem.selected {
+  background-color: #00ffff;
+  color: #121212;
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+/* Google Meet link styling */
+.meetLink {
+  background-color: #00ffff;
+  color: #121212;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+.meetLink3 {
+  background-color: #00ff99;
+  color: #121212;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+.meetLink2 {
+  background-color: #00ff99;
+  color: #121212;
+  padding: 12px 20px;
+  text-align: center;
+  /* border-radius: 8px; */
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  width: 100px;
+  height: 110px;
+  text-align: center;
+  align-content: center;
+  font-size: 50px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  margin: auto;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.meetLink:hover {
+  background-color: #00d0d0;
+  color: white;
+}
+
+/* Close button styling */
+.closeButton {
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #00ffff;
+  color: #121212;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slotContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal {
+    width: 90%;
+  }
+}
+
+

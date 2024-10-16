@@ -1,0 +1,38 @@
+.main{
+    height: 90dvh;
+    overflow: auto;
+    align-content: center;
+    background-color: rgb(41, 41, 41);
+}
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .languages {
+    margin-top: 15px;
+  }
+  
+  .languages label {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .summary {
+    margin-top: 20px;
+  }
+  

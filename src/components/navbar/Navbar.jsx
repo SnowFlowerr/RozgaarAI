@@ -16,8 +16,9 @@ const Navbar = () => {
         </div>
         <ul className={styles.navLinks}>
           <li><a href="/" className={styles.navItem}>Home</a></li>
-          <li><a href="/jobs" className={styles.navItem}>Jobs</a></li>
+          <li><a href="/searchjobs" className={styles.navItem}>Jobs</a></li>
           <li><a href="/features" className={styles.navItem}>Features</a></li>
+          <li><a href="/mentors" className={styles.navItem}>Mentors</a></li>
           <li><a href="/about" className={styles.navItem}>About Us</a></li>
         </ul>
         <div className={styles.authButtons}>

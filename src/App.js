@@ -13,6 +13,9 @@ import Navbar from "./components/navbar/Navbar";
 import HeroSection from "./components/heroSection/HeroSection";
 import FindJobs from "./components/findJobs/FindJobs";
 import CreateNewResume from "./components/createNewResume/CreateNewResume";
+import SearchJobs from "./components/searchJobs/SearchJobs";
+import ProfileCardGrid from "./components/Mentor/ProfileCardGrid";
+import Jobs from "./components/Card/Jobs"
 
 function App() {
 
@@ -52,12 +55,14 @@ function App() {
       <Routes>
           <Route path='/' element={<HeroSection />} />
           <Route path='/find-jobs' element={<FindJobs />} />
+          <Route path='/mentors' element={<ProfileCardGrid />} />
           <Route path='/create-new-resume' element={<CreateNewResume />} />
-
+          <Route path='/searchjobs' element={<SearchJobs />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/insightpost' element={<InsightPost />} />
+          <Route path='/jobs' element={<Jobs />} />
         </Routes>
     </div>
   );

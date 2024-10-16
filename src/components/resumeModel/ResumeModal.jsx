@@ -21,6 +21,7 @@ const ResumeModal = ({ onClose, userType }) => {
         try {
             const data = await axios.post(`https://api.cloudinary.com/v1_1/${process.env.REACT_APP_API_NAME}/auto/upload`, formData)
             currentUser(data?.data.secure_url)
+            navigate("/searchjobs")
             // console.log(data?.data.secure_url)
         } catch (err) {
             console.log(err)
