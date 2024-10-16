@@ -1,0 +1,85 @@
+.box{
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    width: 21%;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 0;
+}
+.box2{
+    position: fixed;
+    width: 100%;
+    height: 100dvh;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 21%; */
+    border-radius: 0px;
+    transition: 0.1s;
+    z-index: 10;
+
+}
+.mainBox{
+    display: flex;
+    gap: 2%;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: center;
+    background-color: rgb(47, 47, 47);
+    /* border: 1px solid black; */
+}
+.main{
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 1%; */
+    /* width: fit-content; */
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.main2{
+    border-radius: 10px;
+    border: 2px solid black;
+    height: calc(100dvh - 50px);
+    padding: 10px;
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+}
+.main > img{
+    width: 100%;
+}
+.main2 > img{
+    /* width: 200px; */
+    height: calc(100dvh - 90px);
+    /* display: none; */
+}
+.btns {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    margin-top: 10px;
+    /* align-items: end; */
+}
+.match{
+    display: flex;
+    height: 25px;
+}
+.prog{
+    margin-top: -10px;
+    margin-right: 10px;
+}
+.btns a > button{
+    margin-left: 10px;
+    font-size: 14px;
+    padding:3px 15px;
+}
+.btns button{
+    font-size: 14px;
+    padding:3px 15px;
+}

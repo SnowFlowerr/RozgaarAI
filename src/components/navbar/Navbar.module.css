@@ -1,0 +1,75 @@
+/* src/components/Navbar.module.css */
+
+.navbar {
+  background-color: #111; /* Dark background */
+  padding: 1rem 2rem; /* Spacing for the navbar */
+  position: sticky; /* Stick to the top */
+  top: 0; /* Always at the top */
+  z-index: 1000; /* Above other content */
+}
+
+.container {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and nav links */
+}
+
+.logoImage {
+  width: 150px; /* Adjust logo size */
+}
+
+.navLinks {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 2rem; /* Space between links */
+}
+
+.navItem {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text color */
+  font-size: 1.1rem; /* Font size */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.navItem:hover {
+  color: #00bcd4; /* Change color on hover */
+}
+
+.authButtons {
+  display: flex; /* Flexbox for buttons */
+  gap: 1rem; /* Space between buttons */
+}
+
+.button {
+  padding: 0.5rem 1rem; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.signIn {
+  background-color: #444; /* Dark button color */
+  color: #fff; /* White text */
+}
+
+.joinNow {
+  background-color: #00bcd4; /* Bright button color */
+  color: #fff; /* White text */
+}
+
+.signIn:hover {
+  background-color: #555; /* Lighter on hover */
+}
+
+.joinNow:hover {
+  background-color: #0097a7; /* Darker on hover */
+}
+.profile{
+  height: 40px;
+  border: 1px solid gray;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+}

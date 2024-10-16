@@ -1,0 +1,65 @@
+/* components/HeroSection.module.css */
+
+.heroContainer {
+  background-color: #1a1a1a; /* Dark background */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* For overlay positioning */
+  color: white; /* White text color */
+  text-align: center; /* Center text */
+  padding: 0 20px; /* Add some padding */
+}
+
+.heroContent {
+  max-width: 800px; /* Limit width for readability */
+  padding: 20px; /* Inner padding */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black background */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  animation: fadeIn 1s ease-in; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide in effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
+}
+
+.heroTitle {
+  font-size: 4rem; /* Larger title font size */
+  margin-bottom: 1rem; /* Space below title */
+  letter-spacing: 2px; /* Spacing between letters */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+  color: #00bcd4; /* A brighter color for contrast */
+}
+
+.heroDescription {
+  font-size: 1.5rem; /* Description font size */
+  margin-bottom: 2rem; /* Space below description */
+  max-width: 600px; /* Max width for readability */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+.heroButton {
+  padding: 1rem 2rem; /* Button padding */
+  font-size: 1.2rem; /* Button font size */
+  background-color: #00bcd4; /* Bright button color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.5); /* Button shadow for depth */
+}
+
+.heroButton:hover {
+  background-color: #0097a7; /* Darker on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
