@@ -1,0 +1,90 @@
+/* src/components/NavBar.css */
+
+
+.navbar {
+    background: linear-gradient(90deg, #1a1a1a, #000000); /* Dark gradient background */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-radius: 12px;
+    
+    position: fixed; /* Keep navbar fixed to the top */
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; /* Distribute items evenly */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 1.5rem;
+    position: relative;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #f0f0f0; /* Light text for contrast */
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for link */
+  }
+  
+  .navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+    color: #ffffff;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  }
+
+  .navbar-link:active {
+    background-color: rgba(255, 255, 255, 0.25); /* Darker shade when active */
+    box-shadow: none;
+    transform: translateY(0); /* Reset hover effect on click */
+  }
+
+  /* Add the active class for the clicked link */
+  .active-link {
+    background-color: rgba(227, 38, 38, 0.5); /* Red background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(227, 38, 38, 0.4); /* Red shadow */
+  }
+
+  /* Notification bubble for each category count */
+  .navbar-item::after {
+    content: attr(data-count); /* Dynamically add count */
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .navbar-item[data-count='0']::after {
+    display: none; /* Hide the bubble if the count is 0 */
+  }
+
+  /* Optional: Add a logo or branding to the navbar */
+  .navbar-logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-logo span {
+    color: #ff3b30; /* Highlight part of the logo */
+  }
