@@ -16,6 +16,7 @@ import CreateNewResume from "./components/createNewResume/CreateNewResume";
 import SearchJobs from "./components/searchJobs/SearchJobs";
 import ProfileCardGrid from "./components/Mentor/ProfileCardGrid";
 import Jobs from "./components/Card/Jobs"
+import JobList from "./components/LatestPost/JobList";
 
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
           <Route path='/create-new-resume' element={<CreateNewResume />} />
           <Route path='/searchjobs' element={<SearchJobs />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/latestposts' element={<JobList />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/insightpost' element={<InsightPost />} />

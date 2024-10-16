@@ -1,0 +1,45 @@
+.jobSection {
+    padding: 50px 40px;
+    background-color: #121212; /* Dark background for the section */
+  }
+  
+  /* Styling for the heading box */
+  .headingBox {
+    background-color: #00bcd4; /* Aqua blue background for the box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 188, 212, 0.5); /* Soft shadow to make the box stand out */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center; /* Center the heading inside the box */
+  }
+  
+  .heading {
+    font-size: 28px;
+    color: #fff; /* White text inside the blue box */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  
+  .jobContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 40px; /* Increased space between the cards */
+    padding: 40px;
+    background-color: #121212; /* Dark background */
+  }
+  
+  @media (max-width: 1200px) {
+    .jobContainer {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .jobContainer {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  

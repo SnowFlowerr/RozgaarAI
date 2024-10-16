@@ -164,7 +164,7 @@ const peopleData = [
           <div className={styles.modalContent}>
             {ismeeting?
             <div className={styles.meetLink2}>
-              <i class="fa-solid fa-check"></i>
+              <i className="fa-solid fa-check"></i>
             </div>
             :
             <>

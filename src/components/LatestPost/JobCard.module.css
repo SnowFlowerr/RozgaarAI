@@ -1,0 +1,84 @@
+.jobCard {
+    background-color: #1e1e24;
+    color: #e0e0e0;
+    padding: 30px; /* Increased padding for a larger card size */
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .jobCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(0, 123, 255, 0.4);
+  }
+  
+  .jobHeader h3 {
+    font-size: 26px; /* Slightly larger font for job title */
+    margin-bottom: 12px;
+    color: #00bcd4; /* Aqua blue for the job title */
+  }
+  
+  .companyInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #a0a0a0;
+  }
+  
+  .rating {
+    font-size: 14px;
+  }
+  
+  .jobDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #00acc1; /* Soft blue for job details */
+  }
+  
+  .experience, .salary, .location {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .qualification {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills span {
+    background-color: #005f73; /* Dark blue/aqua for skill tags */
+    color: #fff;
+    padding: 7px 12px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .postedTime {
+    font-size: 13px;
+    color: #bbb;
+    text-align: right;
+  }
+  
+  /* Badge for Today's posting */
+  .newPostBadge {
+    background-color: #00e676; /* Green to highlight new posts */
+    color: #1e1e24;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  

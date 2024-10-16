@@ -27,7 +27,9 @@
 .animatedHeading > span:hover{
   /* padding: 50px; */
   border: 1px solid black;
-  border-radius: 30px;
+  /* border-radius: 30px; */
+  /* padding: 20px 35px; */
+  font-size: 40px;
 }
 .card {
   background-color: #1a1a1a; /* Dark background for card */

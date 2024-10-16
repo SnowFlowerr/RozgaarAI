@@ -18,7 +18,7 @@ export default function Card({ email, photo, linkedin, match }) {
                 </div>
                 <div>
                 <a href={linkedin} target='_blank'><button>
-                    {/* <i class="fa-brands fa-linkedin"></i> */}
+                    {/* <i className="fa-brands fa-linkedin"></i> */}
                 Connect</button></a>
                 <a href={`mailto:${email}
         ?subject=Application for <Job Title> Position
@@ -35,7 +35,7 @@ ${sign?.name} %0D%0A
 ${sign?.email} %0D%0A
 ${sign?.phone} %0D%0A
 
-        `} target='_blank'><button><i class="fa-solid fa-envelope"></i> Mail Us</button></a>
+        `} target='_blank'><button><i className="fa-solid fa-envelope"></i> Mail Us</button></a>
             </div>
             </div>
             </div>
