@@ -1,0 +1,248 @@
+/* Section Styling */
+.jobDetails {
+  color: #ffffff;
+  background-color: #101010;
+  padding: 2rem;
+  /* border-radius: 12px; */
+}
+
+/* Sections */
+.companySection, .learningSection, .roadmapSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #1a1a1a; /* Added background color for better separation */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Company Section */
+.companyHeader {
+  display: flex;
+  align-items: center;
+}
+
+.companyLogo {
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.companyName {
+  font-size: 1.8rem;
+  color: #00d4ff;
+}
+
+.companyDescription {
+  margin: 0.5rem 0;
+}
+
+.jobDetails {
+  /* margin-top: 1rem; */
+}
+
+.jobType, .skills {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #00d4ff;
+}
+
+.applyButton {
+  background-color: #00d4ff;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.applyButton:hover {
+  background-color: #00ffee;
+}
+
+/* Referrals Section */
+.referralsSection {
+  margin-top: 1.5rem;
+}
+
+.referralsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00d4ff;
+}
+
+.profileDetails {
+  margin-left: 1rem;
+}
+
+.getReferralButton {
+  background-color: #00d4ff;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.getReferralButton:hover {
+  background-color: #00ffee;
+}
+
+/* Learning Section */
+/* Learning Section */
+.learningSection {
+  background-color: #1a1a1a; /* Similar background as the company section */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.learningSection h2 {
+  color: #00d4ff;
+}
+
+.learningGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.resourceCard {
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.resourceCard h3 {
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+.resourceCard p {
+  margin-bottom: 1rem;
+}
+
+.resourceLink {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+
+/* Roadmap Section */
+/* Roadmap Section */
+/* Roadmap Section */
+.roadmapSection {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.roadmapOptions {
+  display: flex;
+  gap: 1rem;
+}
+
+.roadmapCard {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.roadmapCard:hover {
+  background-color: #00d4ff; /* Change on hover */
+  transform: scale(1.05);
+}
+
+.roadmapDiagram {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roadmapNode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.nodeCircle {
+  background-color: #00d4ff;
+  color: #000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  align-content: center;
+}
+
+.connector {
+  width: 4px;
+  height: 50px; /* Adjust height for spacing */
+  background-color: #00d4ff;
+  position: absolute;
+  top: 40px; /* Position below the circle */
+  left: 50%; /* Center align */
+  transform: translateX(-50%);
+}
+
+
+/* Modal Styles */
+.modal {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.closeButton {
+  background-color: #00d4ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.closeButton:hover {
+  background-color: #00ffee;
+}

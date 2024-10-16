@@ -19,10 +19,11 @@ const Navbar = () => {
           <li><a href="/searchjobs" className={styles.navItem}>Jobs</a></li>
           {/* <li><a href="/features" className={styles.navItem}>Features</a></li> */}
           <li><a href="/mentors" className={styles.navItem}>Mentors</a></li>
-          <li><a href="/latestposts" className={styles.navItem}>Latest Posts</a></li>
-          <li><a href="/about" className={styles.navItem}>About Us</a></li>
+          {/* <li><a href="/latestposts" className={styles.navItem}>Latest Posts</a></li> */}
+          {/* <li><a href="/about" className={styles.navItem}>About Us</a></li> */}
         </ul>
         <div className={styles.authButtons}>
+        <button className={`${styles.latest}`} onClick={()=>navigat("/latestposts")}>Latest Posts</button>
           {
             sign?
             <div className={styles.profile} onClick={()=>navigat("/profile")}>

@@ -17,6 +17,9 @@ import SearchJobs from "./components/searchJobs/SearchJobs";
 import ProfileCardGrid from "./components/Mentor/ProfileCardGrid";
 import Jobs from "./components/Card/Jobs"
 import JobList from "./components/LatestPost/JobList";
+import JobDetails from "./components/JobDetails/JobDetails";
+import Posts from "./components/post/Posts";
+import PDFViewer from "./components/resume/PDFViewer";
 
 function App() {
 
@@ -59,7 +62,10 @@ function App() {
           <Route path='/mentors' element={<ProfileCardGrid />} />
           <Route path='/create-new-resume' element={<CreateNewResume />} />
           <Route path='/searchjobs' element={<SearchJobs />} />
+          <Route path='/jobdetails/:id' element={<JobDetails />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/posts' element={<Posts />} />
+          <Route path='/showresume' element={<PDFViewer />} />
           <Route path='/latestposts' element={<JobList />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/signin' element={<Signin />} />

@@ -196,7 +196,7 @@ const SearchJobs = () => {
         </div>
       )}
       <div>
-        {languages.length!==0 && <button className={styles.btns} onClick={()=>navigate("/jobs")}>Search Jobs in this Domain</button>}
+        {languages.length!==0 && <button className={styles.btns} onClick={()=>navigate("/posts")}>Search Jobs in this Domain</button>}
       </div>
     </div>
     </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Profile.module.css'
 import { useSelector } from 'react-redux'
-import Resume from "./Bhudeo's Resume.pdf"
 import axios from 'axios'
 
 export default function Profile() {

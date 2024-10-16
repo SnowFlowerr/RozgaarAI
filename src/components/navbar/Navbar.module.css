@@ -62,6 +62,19 @@
 .signIn:hover {
   background-color: #555; /* Lighter on hover */
 }
+.latest {
+  background-color: #00f929; /* Lighter on hover */
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.latest:hover {
+  background-color: #00dcb4; /* Lighter on hover */
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+}
 
 .joinNow:hover {
   background-color: #0097a7; /* Darker on hover */

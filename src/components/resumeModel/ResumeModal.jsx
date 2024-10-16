@@ -98,7 +98,7 @@ async function currentUser(data) {
 
   const handleCreateNewResume = () => {
     onClose(); // Close the modal before navigating
-    navigate('/create-new-resume'); // Navigate to the new resume creation page
+    navigate('/showresume'); // Navigate to the new resume creation page
   };
 
   return (
@@ -142,7 +142,7 @@ async function currentUser(data) {
           )}
         </div>
 
-        {/* Close button with cross icon */}
+        
         <button className={styles.closeButton} onClick={onClose}>
           <FaTimes className={styles.closeIcon} /> {/* Cross icon */}
         </button>
