@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
         <ul className={styles.navLinks}>
           <li><a href="/" className={styles.navItem}>Home</a></li>
-          <li><a href="/find-jobs" className={styles.navItem}>Jobs</a></li>
+          <li><a href="/jobs" className={styles.navItem}>Jobs</a></li>
           <li><a href="/features" className={styles.navItem}>Features</a></li>
           <li><a href="/about" className={styles.navItem}>About Us</a></li>
         </ul>
@@ -25,12 +25,11 @@ const Navbar = () => {
             sign?
             <div className={styles.profile} onClick={()=>navigat("/profile")}>
               <img src={sign.img} alt="" width={"100%"} height={"100%"}/>
-              {/* {JSON.stringify(sign.img)} */}
             </div>
             :
             <>
-            <button className={`${styles.button} ${styles.signIn}`}>Sign In</button>
-          <button className={`${styles.button} ${styles.joinNow}`}>Join Now</button>
+            <button className={`${styles.button} ${styles.signIn}`} onClick={()=>navigat("/signin")}>Sign In</button>
+            <button className={`${styles.button} ${styles.joinNow}`} onClick={()=>navigat("/signin")}>Join Now</button>
           </>}
         </div>
       </div>
