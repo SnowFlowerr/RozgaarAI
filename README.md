@@ -1,71 +1,79 @@
-# Getting Started with Create React App
+# 🌐 ROZGAAR AI - Job Portal (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **frontend** of the **ROZGAAR AI - Job Portal** project — a sleek and responsive interface that allows job seekers to upload resumes, select their domain, and view relevant job listings. Built with **ReactJS** and styled using **CSS Modules**, the UI is designed to be modern, professional, and mobile-friendly.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 🖼️ Professional dark-mode UI
+- 📤 Resume upload interface
+- 🎯 Domain-based filtering (Frontend, Backend, etc.)
+- 📋 Dynamic job listings
+- 🔐 Auth integration (if implemented)
+- 📱 Responsive design
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework:** ReactJS
+- **Styling:** CSS Modules
+- **Routing:** React Router DOM
+- **Package Manager:** npm / yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+1. **Clone the frontend repo**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/snowflowerr/rozgaarAi.git
+cd rozgaar-frontend
+```
 
-### `npm run build`
+2. **Install dependencies**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the development server**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+4. Open your browser at `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧾 Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+rozgaar-frontend/
+│
+├── public/
+├── src/
+│   ├── components/        # Reusable components
+│   ├── styles/            # CSS Modules
+│   ├── App.jsx
+│   └── index.js
+│
+├── .env                   # (Optional) environment variables
+├── package.json
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌍 Environment Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If your frontend interacts with a backend API, create a `.env` file in the root:
 
-## Learn More
+```
+REACT_APP_API_BASE_URL=http://localhost:5000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📸 Screenshots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Coming soon — Add your UI screenshots here!*
 
-### Code Splitting
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+MIT License © [Bhudeo Krit](https://github.com/snowflowerr)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# RozgaarAI
+🔥 *ROZGAAR AI – Your gateway to opportunities!*
